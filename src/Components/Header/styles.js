@@ -6,6 +6,7 @@ export const ContentHeader = styled.div`
     align-items: center;
     justify-content: center;
     height: 75px;
+    background-color: white;
 
     .sub-header{
         height: 60px;

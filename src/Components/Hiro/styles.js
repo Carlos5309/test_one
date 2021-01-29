@@ -1,29 +1,32 @@
 import styled from 'styled-components'
 
 
-export const ContentHiro = styled.div`
+export const ContentHiro = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 100px;
     min-width: 80%;
     display: flex;
-    margin-top: 100px;
-
+    padding-top: 100px;
+    background-color: white;
+    
 
     @media (max-width: 767px){
         display: block;
         flex-wrap: wrap-reverse;
-        min-width: 0;
-        margin: 55px 35px;
-
+        padding-top: 50px;
         
     }
 
     .sub-hiro-left{
         min-width: 250px;
         margin-right: 15px;
+        padding-left: 10%;
+        @media (max-width: 420px){
+            padding-left: 7%;
+        }
     }
+
 
     .imageHiro{
         width: 99%;
@@ -38,6 +41,9 @@ export const ContentHiro = styled.div`
 
     p{
         font-size: 10px;
+        @media(max-width: 450px){
+            font-size: 15px;
+        };
     }
 
 

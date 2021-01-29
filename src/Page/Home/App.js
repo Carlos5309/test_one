@@ -1,8 +1,10 @@
 import React from 'react';
 import { Header } from '../../Components/Header';
 import { Hiro } from '../../Components/Hiro';
-import { Wrapper } from '../../Components/Wrapper'
-import { GlobalStyle } from '../../Components/GlobalStyle'
+import { GlobalStyle } from '../../Components/GlobalStyle';
+import { Features } from '../../Components/Features';
+import { ProtoAbouts } from '../../Components/ProtoAbouts';
+
 
 function App() {
   return (
@@ -10,9 +12,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Hiro />
-      <Wrapper>
-          
-      </Wrapper>
+      <Features />
+      <ProtoAbouts />
     </div>
   );
 }
