@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 
-export const ContentAbouts = styled.section`
+
+export const ContentAbout = styled.div`
+    background-color: #f1f2f5;
     min-width: 80%;
-    background-color: white;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 25px;
+    @media (max-width: 450px){
+        padding-top: 0  ;
+    }
 
-
-    .sub-abouts{
+    .sub-about {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -23,8 +26,13 @@ export const ContentAbouts = styled.section`
             width: 95%; 
         }
     }
-    .content-image{
-        width: 90%;
+
+    h3{
+        padding: 16px 0;
+    }
+
+    .content-about-image{
+        width: 50%;
         justify-content:flex-start;
         @media (max-width: 420px){
             display: flex;
@@ -32,10 +40,12 @@ export const ContentAbouts = styled.section`
             width: 100%;
             }
         }
+    .about-image{
+        width: 95%;
+    }
 
-
-        .content-description{
-        width: 90%;
+    .content-about-description{ 
+        width: 50%;
         justify-content:flex-start;
         @media (max-width: 420px){
             width: 100%;
@@ -43,14 +53,9 @@ export const ContentAbouts = styled.section`
             
             }
         }
-
-    .images-abouts{
-        width: 90%;
-    }
-
-    p{
-        text-align: start;
+    .content-button-about{
+        padding: 10px 0;
     }
 
 
-`;
+`

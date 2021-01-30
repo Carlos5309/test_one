@@ -16,8 +16,13 @@ export const ContenButton = styled.div`
      
     .button-main{
         color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
-        font-size: 12px
+        font-size: 12px;
+        cursor: pointer;
+        width: 100%;
     }
 
 
