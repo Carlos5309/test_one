@@ -1,7 +1,7 @@
 import React from 'react'
 import { Title } from '../Title'
 import { ContentAbout } from './styles'
-import aboutImage  from '../../Assets/imagesAbouts.png'
+import aboutImage  from '../../Assets/pollo-about-01.jpg'
 import { Button } from '../Button'
 import { Wrapper } from '../Wrapper';
 

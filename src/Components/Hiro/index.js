@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContentHiro } from './styles'
 import { Button } from '../Button'
-import ImgHiro from '../../Assets/landing_1.png'
+import ImgHiro from '../../Assets/pollos-hiro.jpg'
 
 export const Hiro = () => {
     return(

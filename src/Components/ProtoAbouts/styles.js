@@ -5,7 +5,10 @@ export const ContentAbouts = styled.section`
     background-color: white;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 75px 0;
+    @media(max-width: 420px){
+
+    }
 
 
     .sub-abouts{
@@ -20,7 +23,7 @@ export const ContentAbouts = styled.section`
         @media(max-width: 950px){
             display: block;
             justify-content: center; 
-            width: 95%; 
+            width: 100%; 
         }
     }
     .content-image{
@@ -46,6 +49,10 @@ export const ContentAbouts = styled.section`
 
     .images-abouts{
         width: 90%;
+        @media (max-width: 420px){
+            width: 95%;
+            
+            }
     }
 
     p{

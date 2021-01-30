@@ -7,6 +7,7 @@ export const ContentAbout = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 75px;
     @media (max-width: 450px){
         padding-top: 0  ;
     }
@@ -41,7 +42,9 @@ export const ContentAbout = styled.div`
             }
         }
     .about-image{
-        width: 95%;
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
     }
 
     .content-about-description{ 

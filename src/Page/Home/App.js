@@ -4,7 +4,7 @@ import { Hiro } from '../../Components/Hiro';
 import { GlobalStyle } from '../../Components/GlobalStyle';
 import { Features } from '../../Components/Features';
 import { ProtoAbouts } from '../../Components/ProtoAbouts';
-import ImageAbout from '../../Assets/imagesAbouts.png';
+import ImageAbout from '../../Assets/pollos-about-02.jpg';
 import { About } from '../../Components/About';
 import Form from '../../Components/Form'
 import { Footer } from '../../Components/Footer'
