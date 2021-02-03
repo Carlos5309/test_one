@@ -14,9 +14,11 @@ export const ContentCars = styled.div`
         @media(max-width: 450px){
             width: 370px;
     }
+    @media(max-width: 450px){
+            width: 300px;
+    }
 
-       
-
+    
     }
 
     .image-cars{
@@ -29,4 +31,8 @@ export const ContentCars = styled.div`
         text-decoration: none;
         color: #00d3b5;
     };
+
+    p{
+        text-align:center
+    }
 `;
