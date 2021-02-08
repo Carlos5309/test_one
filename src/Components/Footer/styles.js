@@ -7,4 +7,8 @@ import styled from 'styled-components'
     justify-content: center;
     align-items: center;
     background-color: #f1f2f5;
+
+    p{
+       text-align: center;
+    }
  `

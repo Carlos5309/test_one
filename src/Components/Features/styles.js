@@ -8,6 +8,10 @@ export const WrappeFeatures = styled.section`
     background-color: #f1f2f5;
     width: 100%;
     padding-bottom: 45px;
+
+    @media(max-width:815px){
+        justify-content: center;
+    };
     @media(max-width: 420px){
         padding: 15px 0px,
     }

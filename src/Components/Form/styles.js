@@ -16,7 +16,7 @@ export const ContainerForm = styled.section`
         border-radius: 5px;
         justify-content: center;
         @media(max-width: 790px){
-            width: 80%;
+            width: 90%;
         }
 
     }
