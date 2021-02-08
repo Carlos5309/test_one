@@ -8,6 +8,10 @@ import styled from 'styled-components'
     align-items: center;
     background-color: #f1f2f5;
 
+    .sub-footer{
+       margin: 0 25px;
+    }
+
     p{
        text-align: center;
     }

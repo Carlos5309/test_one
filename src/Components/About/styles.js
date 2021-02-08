@@ -35,7 +35,8 @@ export const ContentAbout = styled.div`
     .content-about-image{
         width: 50%;
         justify-content:flex-start;
-        @media (max-width: 420px){
+        @media (max-width: 950px){
+            margin-top:50px;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -50,7 +51,8 @@ export const ContentAbout = styled.div`
     .content-about-description{ 
         width: 50%;
         justify-content:flex-start;
-        @media (max-width: 420px){
+        margin-right: 30px;
+        @media (max-width: 950px){
             width: 100%;
             padding: 0 15px;
             

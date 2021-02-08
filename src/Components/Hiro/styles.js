@@ -22,7 +22,7 @@ export const ContentHiro = styled.section`
         min-width: 250px;
         margin-right: 15px;
         padding-left: 10%;
-        @media (max-width: 420px){
+        @media (max-width: 950px){
             padding-left: 7%;
         }
     }
@@ -34,16 +34,20 @@ export const ContentHiro = styled.section`
 
     }
     .content-hiro-button{
-        height: 80px;
+        height: 60px;
         display: flex;
         align-items: flex-end;
     };
 
     p{
-        font-size: 10px;
-        @media(max-width: 450px){
+        font-size: 15px;
+        /* @media(max-width: 450px){
             font-size: 15px;
-        };
+        }; */
+    }
+
+    .sub-hiro-rigth{
+        margin-top:25px;
     }
 
 

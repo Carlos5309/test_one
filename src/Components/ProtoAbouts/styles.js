@@ -29,7 +29,7 @@ export const ContentAbouts = styled.section`
     .content-image{
         width: 90%;
         justify-content:flex-start;
-        @media (max-width: 420px){
+        @media (max-width: 950px){
             display: flex;
             justify-content: center;
             width: 100%;
@@ -40,7 +40,7 @@ export const ContentAbouts = styled.section`
         .content-description{
         width: 90%;
         justify-content:flex-start;
-        @media (max-width: 420px){
+        @media (max-width: 950px){
             width: 100%;
             padding: 0 15px;
             
@@ -49,7 +49,7 @@ export const ContentAbouts = styled.section`
 
     .images-abouts{
         width: 90%;
-        @media (max-width: 420px){
+        @media (max-width: 950px){
             width: 95%;
             
             }

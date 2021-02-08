@@ -11,18 +11,19 @@ class Form extends Component{
 
      
 
-    // enviarData = (e) => {
-    //    var recibo =  enviar.addEventListener('click', this.enviarData)
-    //     e.preventDefault();
-    //     var inputName = document.getElementsByClassName('inputs-one').value;
-    //     var inputLastName = document.getElementsByClassName('two').value;
-    //     var inputNumber = document.getElementsByClassName('input-celular').value;
-    //     var inputPhone = document.getElementsByClassName('campu-description').value;
-        
-    //     let url = `https://api.whatsapp.com/send?phone=3223149605&text=hola%20${inputName}%20${inputLastName}${inputNumber}%20${inputPhone}`
-    //     console.log(url)
-    //     e.currentTarget.reset();
-    // }
+    enviarData = (e) => {
+        var inputName = document.getElementsByClassName('inputs-one').value;
+        var inputLastName = document.getElementsByClassName('two').value;
+        var inputNumber = document.getElementsByClassName('input-celular').value;
+        var inputPhone = document.getElementsByClassName('campu-description').value;
+         var enviar = ''
+       var recibo =  enviar.addEventListener('click', this.enviarData)
+        e.preventDefault();
+       
+        let url = `https://api.whatsapp.com/send?phone=3223149605&text=hola%20${inputName}%20${inputLastName}${inputNumber}%20${inputPhone}`
+        console.log(url)
+        e.currentTarget.reset();
+    }
 
     render(){
         return(
