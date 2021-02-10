@@ -4,24 +4,21 @@ import { ContainerForm } from './styles'
 import { ButtonForm } from '../ButtonForm'
  
 class Form extends Component{
-    // nombreRef = React.createRef();
-    // apellidoRef = React.createRef();
-    // celularRef = React.createRef();
-    // mensajeRef = React.createRef();
-
-     
-
+    nombreRef = React.createRef();
+    apellidoRef = React.createRef();
+    celularRef = React.createRef();
+    mensajeRef = React.createRef();
     enviarData = (e) => {
-        var inputName = document.getElementsByClassName('inputs-one').value;
-        var inputLastName = document.getElementsByClassName('two').value;
-        var inputNumber = document.getElementsByClassName('input-celular').value;
-        var inputPhone = document.getElementsByClassName('campu-description').value;
-         var enviar = ''
-       var recibo =  enviar.addEventListener('click', this.enviarData)
         e.preventDefault();
-       
-        let url = `https://api.whatsapp.com/send?phone=3223149605&text=hola%20${inputName}%20${inputLastName}${inputNumber}%20${inputPhone}`
-        console.log(url)
+        const dates = {
+            nombre: this.nombreRef.current.value,
+            apellido: this.apellidoRef.current.value,
+            celular: this.celularRef.current.value,
+            mensaje: this.mensajeRef.current.value,
+        }
+        let inputName = '', inputLastName = '', inputNumber = '', inputPhone = ''
+
+        window.open(`https://api.whatsapp.com/send?phone=573223149605&text=Pedido%20${inputName}%20${inputLastName}${inputNumber}%20${inputPhone}`)
         e.currentTarget.reset();
     }
 
@@ -38,23 +35,23 @@ class Form extends Component{
                                 <div className="sud-sub-input-ones">
                                     <div className="content-inputs-one">
                                         <label>Nombre: </label><br />
-                                        <input required type="text" className="inputs-one"  type="text" /><br />
+                                        <input ref={this.nombreRef} required type="text" className="inputs-one"  type="text" /><br />
                                     </div>
                                     <div className="content-inputs-one">
                                         <label>Apellido: </label><br />
-                                        <input required type="text" className="inputs-one two"  type="text" />
+                                        <input ref={this.apellidoRef} required type="text" className="inputs-one two"  type="text" />
                                     </div>
                                 </div>
                                 <div className="conten-input-phone">
                                     <label>Celular: </label><br />
-                                    <input required type="number" className="input-celular" />
+                                    <input ref={this.celularRef} required type="number" className="input-celular" />
                                 </div>
                                 <div className="text-tarea">
                                     <label>Mensaje: </label><br />
-                                    <textarea required className="campu-description" ></textarea> 
+                                    <textarea ref={this.mensajeRef} required className="campu-description" ></textarea> 
                                 </div>
                                 <div className="content-button-submit">
-                                    <ButtonForm className="enviar" nameButtonForm ="Enviar" />
+                                    <ButtonForm onClick={this.enviar} className="enviar" nameButtonForm ="Enviar" />
                                 </div>
                             </form>
                         </div>
