@@ -8,41 +8,43 @@ import { Wrapper } from '../Wrapper'
 export const Features = () => {
     return(
         <React.Fragment>
-            <Title nameTitle="Features" />
-             <Wrapper>
             <WrappeFeatures>
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-                <Cards 
-                    image={imageCarOne}
-                    subTitleCar="Titulo dinamico"
-                    link="link dinamicos"
-                />
-            </WrappeFeatures>
+            <Wrapper>
+            <Title nameTitle="Features" />
+                <div className="sub-features fadeInDown">
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    <Cards 
+                        image={imageCarOne}
+                        subTitleCar="Titulo dinamico"
+                        link="link dinamicos"
+                    />
+                    </div>
             </Wrapper>
+            </WrappeFeatures>
         </React.Fragment>
     )
 }

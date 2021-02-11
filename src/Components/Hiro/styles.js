@@ -2,21 +2,16 @@ import styled from 'styled-components'
 
 
 export const ContentHiro = styled.section`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 80%;
-    display: flex;
-    padding-top: 100px;
-    background-color: white;
-    
+  
 
+.sub-hiro-main{
     @media (max-width: 767px){
         display: block;
-        flex-wrap: wrap-reverse;
-        padding-top: 50px;
+        flex-wrap: wrap;
+        padding: 60px 0;
+
         
-    }
+    }   
 
     .sub-hiro-left{
         min-width: 250px;
@@ -49,6 +44,66 @@ export const ContentHiro = styled.section`
     .sub-hiro-rigth{
         margin-top:25px;
     }
+
+}
+  
+    
+.fadeInUp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 80%;
+    display: flex;
+    padding-top: 100px;
+    background-color: white;
+
+
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
+    
 
 
 `;

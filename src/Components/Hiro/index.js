@@ -5,7 +5,8 @@ import ImgHiro from '../../Assets/pollos-hiro.jpg'
 
 export const Hiro = () => {
     return(
-        <ContentHiro>
+        <ContentHiro >
+            <div className="fadeInUp sub-hiro-main">
             <div className="sub-hiro-left">
                 <h1>Grouw Your <br />
                     Business Faster
@@ -22,6 +23,7 @@ export const Hiro = () => {
             </div>
             <div className="sub-hiro-rigth">
                 <img src={ImgHiro} alt="imageHiro" className="imageHiro" />
+            </div>
             </div>
         </ContentHiro>
     )

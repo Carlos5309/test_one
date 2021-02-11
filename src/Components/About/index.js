@@ -8,9 +8,10 @@ import { Wrapper } from '../Wrapper';
 export const About = (props) => {
     return(
         <React.Fragment>
-            <Title nameTitle="Abouts" />
-            <Wrapper>
+            
         <ContentAbout>
+        <Wrapper>
+        <Title nameTitle="Abouts" />
            <div className="sub-about">
                <div className="content-about-description">
                    <h3>Create Interactive Prototipes</h3>
@@ -27,8 +28,9 @@ export const About = (props) => {
                    <img className="about-image" src={aboutImage}  alt="about-image" />
                </div>
            </div>
-        </ContentAbout>
         </Wrapper>
+
+        </ContentAbout>
         </React.Fragment>
     )
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const ContentAbout = styled.div`
+export const ContentAbout = styled.section`
     background-color: #f1f2f5;
     min-width: 80%;
     display: flex;

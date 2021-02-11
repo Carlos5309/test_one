@@ -16,9 +16,8 @@ class Form extends Component{
             celular: this.celularRef.current.value,
             mensaje: this.mensajeRef.current.value,
         }
-        let inputName = '', inputLastName = '', inputNumber = '', inputPhone = ''
-
-        window.open(`https://api.whatsapp.com/send?phone=573223149605&text=Pedido%20${inputName}%20${inputLastName}${inputNumber}%20${inputPhone}`)
+        console.log(dates)
+        window.open(`https://api.whatsapp.com/send?phone=+573223149605&text=Pedido%20 %0A${dates.nombre}%20${dates.apellido}%20 %0A${dates.celular}%20  %0A${dates.mensaje}`)
         e.currentTarget.reset();
     }
 
@@ -51,7 +50,7 @@ class Form extends Component{
                                     <textarea ref={this.mensajeRef} required className="campu-description" ></textarea> 
                                 </div>
                                 <div className="content-button-submit">
-                                    <ButtonForm onClick={this.enviar} className="enviar" nameButtonForm ="Enviar" />
+                                    <ButtonForm onClick={this.enviarData} className="enviar" nameButtonForm ="Enviar" />
                                 </div>
                             </form>
                         </div>

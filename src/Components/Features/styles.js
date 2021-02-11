@@ -9,10 +9,17 @@ export const WrappeFeatures = styled.section`
     width: 100%;
     padding-bottom: 45px;
 
-    @media(max-width:815px){
-        justify-content: center;
-    };
-    @media(max-width: 420px){
-        padding: 15px 0px,
+    .sub-features{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media(max-width: 810px){
+            display: flex;
+            justify-content: center;
+        }
     }
+
 `;

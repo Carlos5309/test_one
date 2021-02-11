@@ -6,7 +6,7 @@ import { ContentHeader } from './styles'
 export const Header = () => {
     return(
         <ContentHeader>
-            <div className="sub-header">
+            <div className="sub-header fadeInDown">
                 <Link to="/" className="links">Home</Link>
                 <Link to="/Header" className="links">FQ</Link>
                 <Link to="/Header" className="links">Features</Link>

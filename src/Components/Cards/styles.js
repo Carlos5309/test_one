@@ -11,9 +11,8 @@ export const ContentCars = styled.div`
         background-color: white;
         padding: 15px;
         width: 336px;
-        @media(max-width: 470px){
-            width: 365
-            px;
+        @media(max-width: 768px){
+            width: 400px;
     }
     @media(max-width: 450px){
             max-width: 400px;

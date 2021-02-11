@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   button { background: transparent; border: 0; outline: 0 }
 
   body {
-    background-color: #f1f2f5;
+    /* background-color: #f1f2f5; */
     height: 100vh;
     overscroll-behavior: none;
     width: 100%; 
