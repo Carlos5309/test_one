@@ -14,12 +14,12 @@ export const ContentCars = styled.div`
         @media(max-width: 768px){
             width: 400px;
     }
-    @media(max-width: 450px){
-            max-width: 400px;
+    @media(max-width: 436px){
+            max-width: 370px;
     }
 
     @media(max-width: 400px){
-            max-width: 330px;
+            max-width: 290px;
     }
     
     }
