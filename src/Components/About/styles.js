@@ -20,12 +20,9 @@ export const ContentAbout = styled.section`
             display: block;
             justify-content: center; 
             width: 100%; 
+            padding: 0 15px;
         }
-        @media(max-width: 950px){
-            display: block;
-            justify-content: center; 
-            width: 95%; 
-        }
+       
     }
 
     h3{
