@@ -20,6 +20,7 @@ align-items: center;
     height: 75px;
     width: 50%;
     border-bottom: 1px solid #c2c2c2;
+    margin-top:-27px;
     @media(max-width:767px){
         display: flex;
         flex-direction: column; 
@@ -42,6 +43,7 @@ align-items: center;
     z-index: 10;
     position: fixed;
     box-sizing: border-box;
+    margin-top:-27px;
     
 };
 
