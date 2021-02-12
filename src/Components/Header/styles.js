@@ -90,7 +90,7 @@ align-items: center;
     position: fixed;
     margin-left: 15px;
     z-index: 20;
-    margin-top: 113px;
+    margin-top: 60px;
 };
 .content-links{
     @media (max-width:767px){
