@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../../Components/Header';
+import Header from '../../Components/Header'
 import { Hiro } from '../../Components/Hiro';
 import { GlobalStyle } from '../../Components/GlobalStyle';
 import { Features } from '../../Components/Features';

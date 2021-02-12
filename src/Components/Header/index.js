@@ -1,18 +1,51 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { ContentHeader } from './styles'
+import { FiMenu, FiXSquare } from "react-icons/fi";
 
 
-export const Header = () => {
-    return(
+class Header extends Component{
+
+    state = {
+        clicked: false,
+    }
+
+    handleClick = () => {
+        this.setState({
+            clicked: !this.state.clicked
+        })
+    }
+
+    render(){
+        return(
         <ContentHeader>
-            <div className="sub-header fadeInDown">
-                <Link to="/" className="links">Home</Link>
-                <Link to="/Header" className="links">FQ</Link>
-                <Link to="/Header" className="links">Features</Link>
-                <Link to="/Form" className="links">Contact</Link>
-                <Link to="/Header" className="links">Bog</Link>
+            <div className="content-main-button">
+                <button className="icon-menu" onClick={this.handleClick}>
+                    <i className="icon" >
+                        {this.state.clicked ? <FiXSquare /> : <FiMenu />  }
+                    </i>
+                </button>
+            </div>  
+            <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+                <div className="content-links">
+                    <Link to="/" className="links">Home</Link>
+                </div>
+                <div className="content-links">
+                    <Link to="/Header" className="links">FQ</Link>
+                </div>
+                <div className="content-links">
+                    <Link to="/Header" className="links">Features</Link>
+                </div>
+                <div className="content-links">
+                    <Link to="/Form" className="links">Contact</Link>
+                </div>
+                <div className="content-links">
+                    <Link to="/Header" className="links">Bog</Link>
+                </div>
             </div>
         </ContentHeader>
-    )
+        )
+    }
 }
+
+export default Header;

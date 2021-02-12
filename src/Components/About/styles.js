@@ -9,7 +9,7 @@ export const ContentAbout = styled.section`
     padding-top: 25px;
     padding-bottom: 75px;
     @media (max-width: 450px){
-        padding-top: 0  ;
+        padding-top: 0;
     }
 
     .sub-about {

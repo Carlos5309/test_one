@@ -56,6 +56,10 @@ export const ContentHiro = styled.section`
     display: flex;
     padding-top: 100px;
     background-color: white;
+    @media (max-width:767px){
+    padding-top: 50px;
+
+    }
 
 
 
