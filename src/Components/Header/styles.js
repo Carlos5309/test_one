@@ -17,10 +17,10 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 60px;
     width: 50%;
     border-bottom: 1px solid #c2c2c2;
-    margin-top:-27px;
+    
     @media(max-width:767px){
         display: flex;
         flex-direction: column; 
@@ -31,6 +31,7 @@ align-items: center;
         opacity: 1;
         left: -100%;
         transition: all 0.5s ease;
+        margin-top:-27px;
     }
 };
 
@@ -44,6 +45,7 @@ align-items: center;
     position: fixed;
     box-sizing: border-box;
     margin-top:-27px;
+    transition: all 0.5s ease;
     
 };
 
@@ -67,7 +69,8 @@ align-items: center;
 };
 
 .links:hover{
-    background-color: rgba(0,0,0,.6);
+    border-bottom: 5px solid #4c51ec;;
+    margin-bottom:5px;
 }
 
 .icon-menu{
@@ -90,7 +93,6 @@ align-items: center;
 .content-main-button{
     left: 0;
     position: fixed;
-    margin-left: 15px;
     z-index: 20;
     margin-top: 60px;
 };
@@ -104,5 +106,9 @@ align-items: center;
         
     }
 }
+
+
+
+
 
 `

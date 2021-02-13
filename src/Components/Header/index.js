@@ -19,7 +19,7 @@ class Header extends Component{
     render(){
         return(
         <ContentHeader>
-            <div className="content-main-button">
+            <div className="content-main-button ">
                 <button className="icon-menu" onClick={this.handleClick}>
                     <i className="icon" >
                         {this.state.clicked ? <FiXSquare /> : <FiMenu />  }
@@ -31,16 +31,16 @@ class Header extends Component{
                     <Link to="/" className="links">Home</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Header" className="links">FQ</Link>
+                    <Link to="/Header" className="links">Proyects</Link>
                 </div>
                 <div className="content-links">
                     <Link to="/Header" className="links">Features</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Form" className="links">Contact</Link>
+                    <Link to="/Form" className="links">Fqa</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Header" className="links">Bog</Link>
+                    <Link to="/Header" className="links">Contact</Link>
                 </div>
             </div>
         </ContentHeader>
