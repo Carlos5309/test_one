@@ -5,6 +5,9 @@ export const ContentHeader = styled.nav`
 display: flex;
 justify-content: center;
 align-items: center;
+
+
+
 @media(max-width: 767px){
     position: relative;
 };
@@ -69,7 +72,7 @@ align-items: center;
 };
 
 .links:hover{
-    border-bottom: 5px solid #4c51ec;;
+    border-bottom: 5px solid #4c51ec;
     margin-bottom:5px;
 }
 
@@ -105,6 +108,24 @@ align-items: center;
         justify-content: center;
         
     }
+}
+
+.fadeIn{
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 

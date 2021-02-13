@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Title } from '../Title'
 import { ContainerForm } from './styles'
 import { ButtonForm } from '../ButtonForm'
+import Header from '../Header'
  
 class Form extends Component{
     nombreRef = React.createRef();
@@ -24,6 +25,7 @@ class Form extends Component{
     render(){
         return(
             <ContainerForm>
+                <Header />
                 <Title nameTitle="Pedidos" />
                     <div className="content-main-form">
                         <div className="sub-form">

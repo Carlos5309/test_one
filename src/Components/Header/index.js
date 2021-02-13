@@ -31,16 +31,16 @@ class Header extends Component{
                     <Link to="/" className="links">Home</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Header" className="links">Proyects</Link>
+                    <Link to="/" className="links">Proyects</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Header" className="links">Features</Link>
+                    <Link to="/" className="links">Features</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Form" className="links">Fqa</Link>
+                    <Link to="/" className="links">Fqa</Link>
                 </div>
                 <div className="content-links">
-                    <Link to="/Header" className="links">Contact</Link>
+                    <Link to="/Form" className="links">Contact</Link>
                 </div>
             </div>
         </ContentHeader>
