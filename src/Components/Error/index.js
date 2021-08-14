@@ -3,6 +3,7 @@ import { Contenterror } from './styles'
 import ImageError from '../../Assets/error.svg'
 
 
+
 export const Error = () => {
     return(
         <Contenterror>
@@ -12,3 +13,4 @@ export const Error = () => {
         </Contenterror>
     )
 }
+

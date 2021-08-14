@@ -19,30 +19,32 @@ class Header extends Component{
     render(){
         return(
         <ContentHeader>
-            <div className="content-main-button ">
-                <button className="icon-menu" onClick={this.handleClick}>
-                    <i className="icon" >
-                        {this.state.clicked ? <FiXSquare /> : <FiMenu />  }
-                    </i>
-                </button>
-            </div>  
-            <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-                <div className="content-links">
-                    <Link to="/" className="links">Home</Link>
+            {/* <div className="sub-main-header"> */}
+                <div className="content-main-button ">
+                    <button className="icon-menu" onClick={this.handleClick}>
+                        <i className="icon" >
+                            {this.state.clicked ? <FiXSquare /> : <FiMenu />  }
+                        </i>
+                    </button>
+                </div>  
+                <div className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+                    <div className="content-links">
+                        <Link to="/" className="links">Home</Link>
+                    </div>
+                    <div className="content-links">
+                        <Link to="/" className="links">Proyects</Link>
+                    </div>
+                    <div className="content-links">
+                        <Link to="/" className="links">Features</Link>
+                    </div>
+                    <div className="content-links">
+                        <Link to="/" className="links">Fqa</Link>
+                    </div>
+                    <div className="content-links">
+                        <Link to="/Form" className="links">Contact</Link>
+                    </div>
                 </div>
-                <div className="content-links">
-                    <Link to="/" className="links">Proyects</Link>
-                </div>
-                <div className="content-links">
-                    <Link to="/" className="links">Features</Link>
-                </div>
-                <div className="content-links">
-                    <Link to="/" className="links">Fqa</Link>
-                </div>
-                <div className="content-links">
-                    <Link to="/Form" className="links">Contact</Link>
-                </div>
-            </div>
+            {/* </div> */}
         </ContentHeader>
         )
     }

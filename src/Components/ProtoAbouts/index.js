@@ -25,8 +25,6 @@ export const ProtoAbouts = (props) => {
                         </div>
                    </div>
                 </Wrapper>
-
-
             </ContentAbouts>
         </React.Fragment>
     )

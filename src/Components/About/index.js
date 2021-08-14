@@ -1,7 +1,7 @@
 import React from 'react'
 import { Title } from '../Title'
 import { ContentAbout } from './styles'
-import aboutImage  from '../../Assets/pollo-about-01.jpg'
+// import aboutImage  from '../../Assets/pollo-about-01.jpg'
 import { Button } from '../Button'
 import { Wrapper } from '../Wrapper';
 
@@ -24,9 +24,9 @@ export const About = (props) => {
                         <Button nameHiro = "Get about"/>
                     </div>
                </div>
-               <div className="content-about-image">
+               {/* <div className="content-about-image">
                    <img className="about-image" src={aboutImage}  alt="about-image" />
-               </div>
+               </div> */}
            </div>
         </Wrapper>
 

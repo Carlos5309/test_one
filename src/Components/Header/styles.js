@@ -38,6 +38,7 @@ align-items: center;
     }
 };
 
+
 .nav-menu.active{
     width: 100%;
     background-color: rgba(0,0,0,.6);
@@ -71,8 +72,13 @@ align-items: center;
     
 };
 
+.logo{
+    width: 120px;
+    height: 70px;
+};
+
 .links:hover{
-    border-bottom: 5px solid #4c51ec;
+    border-bottom: 5px solid #26b4c0;
     margin-bottom:5px;
 }
 
@@ -102,13 +108,13 @@ align-items: center;
 .content-links{
     @media (max-width:767px){
         width:100%;
-       
         display: flex;
         align-items:center;
         justify-content: center;
         
     }
 }
+
 
 .fadeIn{
   -webkit-animation-duration: 4s;
